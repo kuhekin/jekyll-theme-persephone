@@ -24,8 +24,7 @@ email: your-email@address.com
 
 plugins:
   - jekyll-books
-  - jekyll-feed
-
+  
 # # The followings are settings for displays of your blog.
 theme_setting:
 #   # The slides count in the slides layout. Default is 4.
