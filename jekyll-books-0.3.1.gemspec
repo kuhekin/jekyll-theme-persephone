@@ -1,32 +1,22 @@
-# -*- encoding: utf-8 -*-
-# stub: jekyll-books 0.3.1 ruby lib
+# frozen_string_literal: true
 
-Gem::Specification.new do |s|
-  s.name = "jekyll-books".freeze
-  s.version = "0.3.1"
+Gem::Specification.new do |spec|
+  spec.name          = "jekyll-books"
+  spec.version       = "0.3.1"
+  spec.authors       = ["Sharon Zhang"]
+  spec.email         = ["zhangshiyu1992@hotmail.com"]
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
-  s.require_paths = ["lib".freeze]
-  s.authors = ["Sharon Zhang".freeze]
-  s.date = "2021-06-19"
-  s.email = ["zhangshiyu1992@hotmail.com".freeze]
-  s.homepage = "https://github.com/erlzhang/jekyll-books".freeze
-  s.licenses = ["MIT".freeze]
-  s.required_ruby_version = Gem::Requirement.new(">= 2.3".freeze)
-  s.rubygems_version = "3.3.5".freeze
-  s.summary = "Jekyll books generatoer.".freeze
+  spec.summary       = "Jekyll books generatoer."
+  spec.homepage      = "https://github.com/erlzhang/jekyll-books"
+  spec.license       = "MIT"
 
-  s.installed_by_version = "3.3.5" if s.respond_to? :installed_by_version
+  spec.files         = `git ls-files -z`.split("\x0")
 
-  if s.respond_to? :specification_version then
-    s.specification_version = 4
-  end
+  spec.required_ruby_version = '>= 2.3'
 
-  if s.respond_to? :add_runtime_dependency then
-    s.add_runtime_dependency(%q<jekyll>.freeze, [">= 3.5"])
-    s.add_runtime_dependency(%q<nokogiri>.freeze, ["~> 1.9"])
-  else
-    s.add_dependency(%q<jekyll>.freeze, [">= 3.5"])
-    s.add_dependency(%q<nokogiri>.freeze, ["~> 1.9"])
-  end
+  spec.add_runtime_dependency "jekyll", ">= 3.5"
+  spec.add_runtime_dependency 'nokogiri', '~> 1.9'
+
+  # spec.add_development_dependency "bundler", "~> 1.16"
+  # spec.add_development_dependency "rake", "~> 12.0"
 end
